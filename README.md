@@ -1,2 +1,2 @@
-# reacr
+# react
 React
