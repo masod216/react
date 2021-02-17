@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+
+        //-------------------VALUE TYPE--------------------
+
+        let x1 = 6;
+        console.log(typeof (x1));  //--> number
+        console.log(Number.MIN_VALUE, Number.MAX_VALUE);  //--> 5e-324 1.7976931348623157e+308
+
+
+
+        let x2 = true;
+        console.log(typeof (x2));  //--> boolean (can contain true/false)
+
+
+
+        let x3 = undefined;
+        console.log(typeof (x3));  //--> undefined (can contain undefined)
+
+
+        let x4 = null;
+        console.log(typeof (x4));  //--> object (can contain null)
+
+
+        
+        //-------------------REF TYPE--------------------
+
+        let x5 = {"name":"Bob"};
+        console.log(typeof (x5));  //--> object (for json, array, user defined classes )
+
+
+        let x6 = "Bob";
+        console.log(typeof (x6));  //--> string
+
+
+        let x7 = ()=>{};
+        console.log(typeof (x7));  //--> function
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

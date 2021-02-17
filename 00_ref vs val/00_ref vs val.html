@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+
+        function changeVal(z) {
+            z++;
+        }
+
+
+        function changeRef(z) {
+            z[0]++;
+        }
+
+
+        //----------------VAL------------------
+        let x1 = 3;
+        let x2 = x1;
+        let x3 = 3;
+        console.log(x1 == x2);  //--> true
+        console.log(x1 == x3);  //--> true
+
+
+        console.log(x1, x2, x3);  //--> 3 3 3 
+        changeVal(x1);
+        console.log(x1, x2, x3);  //--> 3 3 3 
+
+        //----------------REF------------------
+        let y1 = [1, 2, 3];
+        let y2 = y1;
+        let y3 = [1, 2, 3];
+        console.log(y1 == y2);  //--> true
+        console.log(y1 == y3);  //--> false
+
+
+        console.log(y1, y2, y3);  //--> [1, 2, 3] [1, 2, 3] [1, 2, 3]
+        changeRef(y1);
+        console.log(y1, y2, y3);  //--> [2, 2, 3] [2, 2, 3] [1, 2, 3]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
