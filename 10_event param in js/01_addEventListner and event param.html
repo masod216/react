@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        function countryDropDown(p) {
+            console.log(p);
+            console.log(p.target.value);
+        }
+
+        onload=()=>{
+            document.getElementById("res").addEventListener("change",countryDropDown)
+        }
+    </script>
+</head>
+
+
+<body>
+    <select id="res">
+        <option value="Israel">Israel</option>
+        <option value="USA">USA</option>
+        <option value="Germany">Germany</option>
+    </select>
+</body>
+
+</html>
